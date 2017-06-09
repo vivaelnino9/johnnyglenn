@@ -1,25 +1,57 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+@import url('https://fonts.googleapis.com/css?family=Coda:400,800');
+header {
+    background-image: url('https://s3.amazonaws.com/jonnyglenn/jonnyglenn_header.jpg')!important;
 }
-
-.menu:before {
-  content: "[";
+footer {
+    height: 30px;
+    padding-bottom: 50px;
 }
-
-.menu:after {
-  content: "]";
+.social-links {
+    position: absolute;
+    bottom: 20px;
 }
-
-.menu > li {
-  display: inline;
+#tour, #photos {
+    background-color: #fff;
+    text-align: center;
 }
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+#contact, footer {
+    background-color: #e0e0e0;
+}
+.youtube-link {
+    text-align: center;
+}
+.ng-binding {
+    color: #313130;
+    font-family: 'Coda', cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+.ng-scope {
+    list-style: none;
+}
+.img-responsive {
+    width: 480px;
+    height: 260px;
+}
+.container {
+    text-align: center;
+    font-family: 'Coda', cursive;
+    letter-spacing: 2px;
+}
+.multiple-items {
+    margin-top: 40px;
+    padding-left: 40px;
+}
+.fa-angle-right, .fa-angle-left {
+    position: absolute;
+    font-size: 80px;
+}
+.fa-angle-right {
+    margin-left: 40px;
+}
+.fa-angle-left {
+    margin-right: 40px;
 }

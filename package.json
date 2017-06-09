@@ -1,9 +1,9 @@
 {
-  "name": "johhnyglenn",
+  "name": "jonnyglenn",
   "private": true,
   "version": "0.0.0",
-  "description": "A business site for artist, Johnny Glenn",
-  "repository": "https://github.com/vivaelnino9/johnnyglenn",
+  "description": "A business site for artist, Jonny Glenn",
+  "repository": "https://github.com/vivaelnino9/jonnyglenn",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
@@ -14,7 +14,19 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
-    "protractor": "^4.0.9"
+    "protractor": "^4.0.9",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "^3.1.4"
   },
   "scripts": {
     "postinstall": "bower install",
@@ -23,7 +35,7 @@
     "postupdate-deps": "bower update",
 
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+    "start": "http-server -a 192.168.10.101 -p 8000 -c-1 ./app",
 
     "pretest": "npm install",
     "test": "karma start karma.conf.js",

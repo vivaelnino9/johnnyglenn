@@ -1,41 +1,195 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
-<body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-  </ul>
+<html lang="en" ng-app="myApp" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jonny Glenn</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <!-- Custom Fonts -->
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-  <div ng-view></div>
+    <!-- Plugin CSS -->
+    <link href="static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <div>Angular seed app: v<span app-version></span></div>
-
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <link href="static/css/creative.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="tour-list.component.js"></script>
+  </head>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="bower_components/angular/angular.js"></script>
+  <body id="page-top">
+
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                  </button>
+                  <span><a class="navbar-brand page-scroll" href="#page-top">Jonny Glenn</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a class="page-scroll" href="#music">Music</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#photos">Photos</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#tour">Tour Dates</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+
+      <header>
+        <div class="social-links">
+          <a href="https://www.instagram.com/jonny_glenn/" target="_blank"><i class="fa fa-instagram" style="font-size:48px;"></i></a>
+          <a href="https://www.facebook.com/JonnyGlenn/" target="_blank"><i class="fa fa-facebook" style="font-size:48px;"></i></a>
+          <a href="https://twitter.com/TheJonnyGlenn" target="_blank"><i class="fa fa-twitter" style="font-size:48px;"></i></a>
+          <a href="https://www.youtube.com/user/jonglenn1000" target="_blank"><i class="fa fa-youtube" style="font-size:48px;"></i></a>
+          <a href="https://play.spotify.com/artist/5Q7RuKEXTvVcowRVcQt4su" target="_blank"><i class="fa fa-spotify" style="font-size:48px;"></i></a>
+        </div>
+      </header>
+      <section class="bg-dark" id="music">
+          <div class="container text-center">
+              <div class="call-to-action">
+                <iframe src="https://open.spotify.com/embed?uri=spotify:track:59QZfkgavM8GM8vS88w2nR" width="300" height="380" frameborder="0" allowtransparency="true" style="margin-right:20px;"></iframe>
+                <iframe src="https://open.spotify.com/embed?uri=spotify:track:0wIJxLHR9hXHRY0763YjGM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+              </div>
+          </div>
+      </section>
+<!-- Photos -->
+      <section class="no-padding" id="photos">
+        <div class="container">
+          <h2><a href="https://www.instagram.com/jonny_glenn/" target="_blank"><b>@jonny_glenn</a> on Instagram</b>&nbsp;<a href="https://www.instagram.com/jonny_glenn/" target="_blank"><i class="fa fa-instagram" style="font-size:48px;"></i></a></h2>
+          <div class="multiple-items">
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn1.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn1_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn2.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn2_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn3.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn3_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn4.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn4_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn5.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn5_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn6.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn6_thum.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- end Photos -->
+<!-- Tour -->
+      <section class="bg-primary" id="tour">
+        <tour-list></tour-list>
+      </section>
+<!-- end Tour -->
+
+<!-- Videos -->
+      <!-- <section id="videos">
+
+        <div class="youtube-link">
+          <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=jonglenn1000" width="700" height="400" align="center" allowfullscreen></iframe>
+          <div class="g-ytsubscribe" data-channelid="UCQ5eridqNiHdeKfbtU0ju_Q" data-layout="full" data-count="default" ></div>
+        </div>
+      </section> -->
+<!-- end Videos -->
+<!-- Contact -->
+      <section id="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 text-center">
+                      <h2 class="section-heading">Contact</h2>
+                      <hr class="primary" style="margin:20px 350px;">
+                      <p>Lorem ipsum dolor sit amet, ea cum aeterno tibique oportere, ea sea euripidis persecuti sadipscing. Id ius consul adversarium!</p>
+                  </div>
+                  <div class="col-lg-4 col-lg-offset-2 text-center">
+                      <i class="fa fa-phone fa-3x sr-contact"></i>
+                      <p>843-864-5572</p>
+                  </div>
+                  <div class="col-lg-4 text-center">
+                      <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                      <p><a href="mailto:jonnyglennmgmt@gmail.com" style="color:#333;">jonnyglennmgmt@gmail.com</a></p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <footer>
+        <div style="text-align:center;">
+          <a href="https://www.instagram.com/jonny_glenn/" target="_blank"><i class="fa fa-instagram" style="font-size:35px;color:#333;"></i></a>
+          <a href="https://www.facebook.com/JonnyGlenn/" target="_blank"><i class="fa fa-facebook" style="font-size:35px;color:#333;"></i></a>
+          <a href="https://twitter.com/TheJonnyGlenn" target="_blank"><i class="fa fa-twitter" style="font-size:35px;color:#333;"></i></a>
+          <a href="https://www.youtube.com/user/jonglenn1000" target="_blank"><i class="fa fa-youtube" style="font-size:35px;color:#333;"></i></a>
+          <a href="https://play.spotify.com/artist/5Q7RuKEXTvVcowRVcQt4su" target="_blank"><i class="fa fa-spotify" style="font-size:35px;color:#333;"></i></a>
+        </div>
+      </footer>
+  <!-- end Contact -->
+  <!-- jQuery -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="static/vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+  <!-- Theme JavaScript -->
+  <script src="static/js/creative.min.js"></script>
+
+  <!-- <script src="bower_components/angular/angular.js"></script> -->
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <script src="static/js/photos.js"></script>
 </body>
 </html>

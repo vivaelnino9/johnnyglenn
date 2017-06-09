@@ -1,8 +1,8 @@
 {
-  "name": "johnnyglenn",
-  "description": "A business site for artist, Johnny Glenn",
+  "name": "jonnyglenn",
+  "description": "A business site for artist, Jonny Glenn",
   "version": "0.0.0",
-  "homepage": "https://github.com/vivaelnino9/johnnyglenn",
+  "homepage": "https://github.com/vivaelnino9/jonnyglenn",
   "license": "MIT",
   "private": true,
   "dependencies": {
