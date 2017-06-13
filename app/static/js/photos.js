@@ -10,5 +10,19 @@ $('.multiple-items').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   prevArrow:'<i class="fa fa-angle-left" style="font-size:48px;color:#F05F40;left:0;bottom:50%;cursor:pointer"></i>',
-  nextArrow:'<i class="fa fa-angle-right" style="font-size:48px;color:#F05F40;right:0;bottom:50%;cursor:pointer"></i>'
+  nextArrow:'<i class="fa fa-angle-right" style="font-size:48px;color:#F05F40;right:0;bottom:50%;cursor:pointer"></i>',
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        autoplay: true,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });

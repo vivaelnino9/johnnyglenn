@@ -1,6 +1,9 @@
 /* app css stylesheet */
 
 @import url('https://fonts.googleapis.com/css?family=Coda:400,800');
+body {
+    overflow-x: hidden;
+}
 header {
     background-image: url('https://s3.amazonaws.com/jonnyglenn/jonnyglenn_header.jpg')!important;
 }
@@ -54,4 +57,24 @@ footer {
 }
 .fa-angle-left {
     margin-right: 40px;
+}
+@media only screen and (max-width: 500px) {
+    .photos-header {
+        font-size: 25px;
+    }
+    .multiple-items {
+        padding-left: 0px;
+    }
+    .fa-angle-right {
+        display: none;
+    }
+    .tour-list {
+        padding-left: 0px;
+    }
+    .ng-binding {
+        font-size: 15px;
+    }
+}
+.email {
+    margin-top: 10px;
 }

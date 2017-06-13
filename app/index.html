@@ -28,7 +28,10 @@
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
-    <script src="tour-list.component.js"></script>
+    <script src="tour-list/tour-list.module.js"></script>
+    <script src="tour-list/tour-list.component.js"></script>
+    <script src="photo-list/photo-list.module.js"></script>
+    <script src="photo-list/photo-list.component.js"></script>
   </head>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -87,7 +90,10 @@
 <!-- Photos -->
       <section class="no-padding" id="photos">
         <div class="container">
-          <h2><a href="https://www.instagram.com/jonny_glenn/" target="_blank"><b>@jonny_glenn</a> on Instagram</b>&nbsp;<a href="https://www.instagram.com/jonny_glenn/" target="_blank"><i class="fa fa-instagram" style="font-size:48px;"></i></a></h2>
+          <h2 class="photos-header"><a href="https://www.instagram.com/jonny_glenn/" target="_blank"><b>@jonny_glenn</a> on Instagram</b>&nbsp;<a href="https://www.instagram.com/jonny_glenn/" target="_blank"><i class="fa fa-instagram" style="font-size:48px;"></i></a></h2>
+          <!-- <div class="multiple-items">
+            <photo-list></photo-list>
+          </div> -->
           <div class="multiple-items">
             <div>
               <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn1.jpg">
@@ -119,6 +125,26 @@
                 <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn6_thum.png">
               </a>
             </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn7.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn7_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn8.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn8_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn9.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn9_thum.png">
+              </a>
+            </div>
+            <div>
+              <a class="full-size" href="https://s3.amazonaws.com/jonnyglenn/jonnyglenn10.jpg">
+                <img src="https://s3.amazonaws.com/jonnyglenn/jonnyglenn10_thum.png">
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -145,15 +171,11 @@
                   <div class="col-lg-8 col-lg-offset-2 text-center">
                       <h2 class="section-heading">Contact</h2>
                       <hr class="primary" style="margin:20px 350px;">
-                      <p>Lorem ipsum dolor sit amet, ea cum aeterno tibique oportere, ea sea euripidis persecuti sadipscing. Id ius consul adversarium!</p>
+                      <p>For Booking, Management, and Inquiries, please email!</p>
                   </div>
-                  <div class="col-lg-4 col-lg-offset-2 text-center">
-                      <i class="fa fa-phone fa-3x sr-contact"></i>
-                      <p>843-864-5572</p>
-                  </div>
-                  <div class="col-lg-4 text-center">
-                      <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                      <p><a href="mailto:jonnyglennmgmt@gmail.com" style="color:#333;">jonnyglennmgmt@gmail.com</a></p>
+                  <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p class="email"><a href="mailto:jonnyglennmgmt@gmail.com" style="color:#333;">jonnyglennmgmt@gmail.com</a></p>
                   </div>
               </div>
           </div>
