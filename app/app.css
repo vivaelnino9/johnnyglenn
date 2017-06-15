@@ -78,3 +78,6 @@ footer {
 .email {
     margin-top: 10px;
 }
+.slick-slide img {
+    display: inline;
+}

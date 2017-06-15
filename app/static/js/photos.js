@@ -13,7 +13,16 @@ $('.multiple-items').slick({
   nextArrow:'<i class="fa fa-angle-right" style="font-size:48px;color:#F05F40;right:0;bottom:50%;cursor:pointer"></i>',
   responsive: [
     {
-      breakpoint: 480,
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows:false,
+        autoplay: true,
+      }
+    },
+    {
+      breakpoint: 400,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
